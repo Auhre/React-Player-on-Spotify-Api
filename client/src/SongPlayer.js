@@ -7,6 +7,7 @@ function SongPlayer({ accessToken, trackUri }) {
 
     if (!accessToken)
         return
+    
     return <SpotifyPlayer 
             token={accessToken}
             play={play}
