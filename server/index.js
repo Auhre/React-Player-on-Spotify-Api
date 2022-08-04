@@ -36,7 +36,7 @@ app.post('/login', (req, res) => {
 app.post('/refresh', (req, res) => {
 
     const refreshToken = req.body.refreshToken
-    console.log(refreshToken)
+    //console.log(refreshToken)
     let refreshCredentials = credentials
     refreshCredentials = {...refreshCredentials, refreshToken, }
     const spotifyWebApi = new SpotifyWebApi(refreshCredentials)
