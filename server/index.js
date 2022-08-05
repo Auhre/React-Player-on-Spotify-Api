@@ -57,5 +57,5 @@ app.post('/refresh', (req, res) => {
 
 
 
-app.listen(5000)
-console.log("Local Server Operating...")
+app.listen(5000, () => console.log('Local Server Operating...'))
+
